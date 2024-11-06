@@ -6,7 +6,7 @@ const Header = () => {
     <nav className="container mx-auto p-4 bg-transparent">
       <div className="flex justify-between items-center">
         <div className="flex justify-between items-center gap-x-12">
-          <div>
+          <div className="flex items-center">
             <h1 className="text-2xl text-white">
               <span className="font-semibold">Restau</span>rant
             </h1>
