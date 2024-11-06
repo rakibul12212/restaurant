@@ -2,7 +2,7 @@ import React from 'react';
 
 const PopularItems = () => {
     return (
-        <div>
+        <div className='container mx-auto'>
             
         </div>
     );

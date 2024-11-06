@@ -5,7 +5,7 @@ import Footer from "./Footer/Footer";
 
 const Main = () => {
   return (
-    <div>
+    <div className=" bg-green-500 max-w-{1920px}">
       <Header />
       <Outlet />
       <Footer />
