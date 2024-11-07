@@ -2,10 +2,10 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-10">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-20">
       <div className=" flex flex-col lg:flex-row justify-between items-center py-10 lg:py-20">
         <div className="absolute text-white z-10 mb-8 lg:mb-0">
-          <div className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6">
+          <div className="text-3xl sm:text-4xl lg:text-6xl 2xl:text-6xl font-bold mb-4 lg:mb-6">
             <div className="backdrop-grayscale-0 bg-red-500/30 inline-block ps-2 pr-10 sm:pr-5 lg:pr- py-2 z-10">
               <p className="py-4">TASTE THE AUTHENTIC</p>
               <p>SAUDI CUISINE</p>
@@ -20,7 +20,7 @@ const HeroSection = () => {
           </button>
         </div>
 
-        <div className="relative left-[470px] 2xl:left-[900px] flex-shrink-0">
+        <div className="relative left-[470px] 2xl:left-[500px] flex-shrink-0">
           <div className="relative">
             <img
               src="https://i.ibb.co/D8SHc8H/Vector.png"
@@ -31,10 +31,10 @@ const HeroSection = () => {
             <img
               src="https://i.ibb.co/K5DLHjG/image-1.png"
               alt="hero-img"
-              className="relative rounded-lg shadow-lg z-0 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl"
+              className="relative rounded-lg shadow-lg z-0 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full"
             />
 
-            <div className="absolute bottom-[-5px] right-[-15px] sm:bottom-[-0px] sm:right-[-30px]">
+            <div className="absolute bottom-[-5px] right-[-15px] sm:bottom-[-4px] sm:right-[-30px]">
               <img
                 src="https://i.ibb.co/2Fmm5rc/Frame-1707478070.png"
                 alt="today-offer"

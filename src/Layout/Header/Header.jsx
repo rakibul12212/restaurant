@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className="container mx-auto py-4 px-6 bg-transparent">
+    <nav className="container mx-auto py-4 px-20 bg-transparent">
       <div className="flex justify-between items-center">
         <div className="flex justify-between items-center gap-x-12">
-          <div className="flex items-center gap-x-2">
+          <div className="flex items-center gap-x-5">
             <img src="https://i.ibb.co.com/TBTRsHG/Group.png" alt="logo" />
             <h1 className="text-2xl text-white">
               <span className="font-semibold">Restau</span>rant
