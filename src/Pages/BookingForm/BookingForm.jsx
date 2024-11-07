@@ -6,7 +6,7 @@ const BookingForm = () => {
   const [date, setDate] = useState("");
   const [number, setNumber] = useState("");
   const [message, setMessage] = useState("");
-  const [showModal, setShowModal] = useState(false); // State for modal visibility
+  const [showModal, setShowModal] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -30,23 +30,25 @@ const BookingForm = () => {
   };
 
   return (
-    <div className="px-4 sm:px-6 lg:px-0 2xl:px-0">
-      <div className="container mx-auto px-20 py-20 bg-booking-bg bg-cover bg-center">
+    <div className="px-0 sm:px-6 lg:px-0 2xl:px-0">
+      <div className="container mx-auto px-4 sm:px-10 lg:px-20 py-10 sm:py-20 bg-booking-bg bg-cover bg-center">
         <div>
-          <p className="y-20 flex gap-x-4">
-            <span className="text-red-700 size-2">&#9632;</span>
+          <p className="flex gap-x-4 mb-4">
+            <span className="text-red-700 text-2xl">&#9632;</span>
             <span className="text-red-700 font-medium">Book Now</span>
           </p>
-          <div className="text-white">
-            <p className="text-3xl font-bold py-2">BOOK YOUR TABLE</p>
-            <p className="w-[490px]">
+          <div className="text-white mb-6">
+            <p className="text-2xl sm:text-3xl font-bold py-2">
+              BOOK YOUR TABLE
+            </p>
+            <p className="w-full sm:w-[490px] text-base sm:text-lg">
               Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu
               leo molestie vel, ornare non id blandit netus.
             </p>
           </div>
-          <div id="form" className="pt-10 pb-10">
+          <div id="form" className="pt-4 pb-10">
             <form onSubmit={handleSubmit}>
-              <div className="grid grid-cols-2 gap-x-2 gap-y-3 max-w-[665px] pb-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-2 gap-y-3 max-w-full sm:max-w-[665px] pb-4">
                 <input
                   type="text"
                   placeholder="Your Name*"
@@ -85,19 +87,18 @@ const BookingForm = () => {
                   onChange={(e) => setNumber(e.target.value)}
                   className="bg-transparent border-2 border-gray-500 p-2 text-white outline-none"
                 />
-                <input
-                  type="text"
-                  name="text"
-                  id="text"
+                <textarea
+                  name="message"
+                  id="message"
                   placeholder="Message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  className="w-[665px] h-[140px] bg-transparent border-2 border-gray-500 pb-24 ps-2 text-white outline-none"
+                  className="w-full  h-24 sm:h-36 bg-transparent border-2 border-gray-500 p-2 text-white outline-none resize-none"
                 />
               </div>
               <button
                 type="submit"
-                className="bg-yellow-500 text-black font-semibold px-4 py-2 rounded"
+                className="w-full sm:w-auto bg-yellow-500 text-black font-semibold px-4 py-2 rounded"
               >
                 BOOK NOW
               </button>
@@ -107,7 +108,7 @@ const BookingForm = () => {
       </div>
 
       {showModal && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 px-4">
           <div className="bg-white p-6 rounded-md shadow-lg max-w-sm w-full">
             <h2 className="text-lg font-bold mb-4">Form Submitted</h2>
             <p>
@@ -127,7 +128,7 @@ const BookingForm = () => {
             </p>
             <button
               onClick={closeModal}
-              className="mt-4 bg-yellow-500 text-black font-semibold px-4 py-2 rounded"
+              className="mt-4 bg-yellow-500 text-black font-semibold px-4 py-2 rounded w-full sm:w-auto"
             >
               Close
             </button>
