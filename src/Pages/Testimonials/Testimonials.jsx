@@ -52,10 +52,10 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="bg-white  sm:px-6 lg:px-0 2xl:px-0">
+    <div className="bg-white px-4 sm:px-6 lg:px-0 2xl:px-0">
       <div className="container mx-auto  sm:px-20 py-20 bg-testimonial-bg bg-cover bg-center">
         <div>
-          <p className="mb-8 flex gap-x-4">
+          <p className="mb-4 flex gap-x-4">
             <span className="text-red-700">&#9632;</span>
             <span className="text-red-700 font-medium">
               Crispy, Every Bite Taste
