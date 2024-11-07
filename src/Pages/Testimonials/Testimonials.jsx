@@ -64,7 +64,7 @@ const Testimonials = () => {
         </div>
         <div className="flex justify-between items-center">
           <div>
-            <p className="text-3xl font-bold py-2">POPULAR FOOD ITEMS</p>
+            <p className="text-3xl font-bold py-2">WHAT SOME OF MY CUSTOMERS SAY</p>
           </div>
           <div className="flex gap-x-4">
             <button
