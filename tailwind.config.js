@@ -7,6 +7,8 @@ export default {
         "hero-bg": "url('https://i.ibb.co.com/fr9PFGk/Frame-1707477989.png')",
         "popular-bg":
           "url('https://i.ibb.co.com/4SvKDKq/Frame-1707478012.png')",
+        "booking-bg":
+          "url('https://i.ibb.co.com/9yYLK4b/Frame-1707478003.png')",
       },
     },
   },
