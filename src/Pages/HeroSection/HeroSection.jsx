@@ -20,7 +20,7 @@ const HeroSection = () => {
           </button>
         </div>
 
-        <div className="relative left-[420px] 2xl:left-[950px] flex-shrink-0">
+        <div className="relative left-[470px] 2xl:left-[900px] flex-shrink-0">
           <div className="relative">
             <img
               src="https://i.ibb.co/D8SHc8H/Vector.png"
@@ -31,10 +31,10 @@ const HeroSection = () => {
             <img
               src="https://i.ibb.co/K5DLHjG/image-1.png"
               alt="hero-img"
-              className="relative rounded-lg shadow-lg z-0 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
+              className="relative rounded-lg shadow-lg z-0 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl"
             />
 
-            <div className="absolute bottom-[-5px] right-[-15px] sm:bottom-[-10px] sm:right-[-30px]">
+            <div className="absolute bottom-[-5px] right-[-15px] sm:bottom-[-0px] sm:right-[-30px]">
               <img
                 src="https://i.ibb.co/2Fmm5rc/Frame-1707478070.png"
                 alt="today-offer"
