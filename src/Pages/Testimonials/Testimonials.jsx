@@ -4,7 +4,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 const data = [
   {
     review:
-      "You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would defiantly recommend it.",
+      "You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would definitely recommend it.",
     user_name: "KHALID AL DAWSRY",
     user_location: "Jedda, Saudi",
     user_photo: "https://i.ibb.co.com/zhxyD0C/Image.png",
@@ -28,7 +28,7 @@ const data = [
   },
   {
     review:
-      "he Chicken Mandi was delicious! The chicken was so tender and well-seasoned. The rice was flavorful and complemented the chicken beautifully. It’s a great option for a satisfying meal, and I’ll be coming back for more!",
+      "The Chicken Mandi was delicious! The chicken was so tender and well-seasoned. The rice was flavorful and complemented the chicken beautifully. It’s a great option for a satisfying meal, and I’ll be coming back for more!",
     user_name: "James Carter",
     user_location: "Sydney, Australia",
     user_photo: "https://i.ibb.co.com/zhxyD0C/Image.png",
@@ -52,21 +52,22 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="bg-white px-4 sm:px-6 lg:px-0 2xl:px-0">
-      <div className="container mx-auto  py-20 bg-testimonial-bg bg-cover bg-center">
+    <div className="bg-white  sm:px-6 lg:px-0 2xl:px-0">
+      <div className="container mx-auto  sm:px-20 py-20 bg-testimonial-bg bg-cover bg-center">
         <div>
-          <p className="y-20 flex gap-x-4">
-            <span className="text-red-700 size-2">&#9632;</span>
+          <p className="mb-8 flex gap-x-4">
+            <span className="text-red-700">&#9632;</span>
             <span className="text-red-700 font-medium">
               Crispy, Every Bite Taste
             </span>
           </p>
         </div>
-        <div className="flex justify-between items-center">
-          <div>
-            <p className="text-3xl font-bold py-2">WHAT SOME OF MY CUSTOMERS SAY</p>
-          </div>
-          <div className="flex gap-x-4">
+        <div className="flex justify-between items-center mb-8">
+          <p className="text-3xl font-bold py-2">
+            WHAT SOME OF MY CUSTOMERS SAY
+          </p>
+          {/* Desktop Navigation (Hidden on Mobile) */}
+          <div className="hidden md:flex justify-between items-center gap-4 ">
             <button
               onClick={handlePrevious}
               className="bg-white shadow-lg p-3 rounded-full hover:text-red-700"
@@ -82,16 +83,16 @@ const Testimonials = () => {
           </div>
         </div>
         {/* Card */}
-        <div className="flex bg-[#FEBF00] mt-16">
-          <div className="py-16 px-20 ps-28">
+        <div className="flex flex-col md:flex-row bg-[#FEBF00] mt-16 gap-8 md:gap-16">
+          <div className="py-16 px-6 md:px-20 md:ps-28 flex-1">
             <span>
               <img
                 src="https://i.ibb.co.com/Xk3fy11/text.png"
                 alt=""
-                className="size-6 relative  right-8 top-4"
+                className="size-6 relative right-6 top-4"
               />
             </span>
-            <p className="text-xl pb-32 max-w-[386px] relative">
+            <p className="text-xl pb-8 max-w-[386px] relative">
               {data[currentIndex].review}
             </p>
             <div className="flex justify-between items-center gap-x-4 border-b-2 border-black">
@@ -105,18 +106,36 @@ const Testimonials = () => {
                 <img
                   src={data[currentIndex].user_photo}
                   alt={data[currentIndex].user_name}
-                  className="w-12 h-12 rounded-full "
+                  className="w-12 h-12 rounded-full"
                 />
               </div>
             </div>
           </div>
+
+          {/* Right Side: Video Image */}
           <div className="flex-1">
             <img
               src={data[currentIndex].recipe_video}
               alt="Recipe"
-              className="w-[763.6px] h-[555.97px] "
+              className="w-full h-full  shadow-md"
             />
           </div>
+        </div>
+
+        {/* Mobile Buttons under the Card */}
+        <div className="flex justify-center gap-4 mt-6 md:hidden">
+          <button
+            onClick={handlePrevious}
+            className="bg-white p-3 rounded-full hover:text-red-700"
+          >
+            <IoIosArrowBack />
+          </button>
+          <button
+            onClick={handleNext}
+            className="bg-white p-3 rounded-full hover:text-red-700"
+          >
+            <IoIosArrowForward />
+          </button>
         </div>
       </div>
     </div>
