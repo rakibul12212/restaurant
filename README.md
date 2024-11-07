@@ -8,7 +8,7 @@ its an e-commerce website
 Install my-project with npm
 
 ```bash
-  git clone https://github.com/rakibul12212/flickmall.git
+  gh repo clone rakibul12212/restaurant
   cd foldername
   npm Install
   npm run dev
