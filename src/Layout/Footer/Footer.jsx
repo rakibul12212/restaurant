@@ -6,7 +6,7 @@ import { IoLocationOutline } from "react-icons/io5";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <div className="px-0 sm:px-6 lg:px-0 2xl:px-0">
       <div className="container mx-auto px-4 lg:px-28 py-10 lg:py-20 bg-footer-bg bg-cover bg-center">
@@ -14,7 +14,6 @@ const Footer = () => {
           <p>WE'RE READY TO GIVE YOU THE BEST DINING EXPERIENCE</p>
         </div>
 
-        {/* Icon Sections */}
         <div className="flex flex-col lg:flex-row justify-between items-center text-center text-white pt-10 lg:pt-20 gap-y-10 lg:gap-y-0">
           <div className="flex flex-col items-center">
             <IoMdStopwatch className="text-[#febf00] text-4xl lg:text-5xl pb-2" />
@@ -45,26 +44,37 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Social Media Icons */}
         <div className="flex justify-center items-center gap-x-4 pt-10 lg:pt-20">
           <div className="border-2 p-2 rounded-full">
-            <img src="https://i.ibb.co/9c683Sh/facebook-circle.png" alt="Facebook" />
+            <img
+              src="https://i.ibb.co/9c683Sh/facebook-circle.png"
+              alt="Facebook"
+            />
           </div>
           <div className="border-2 p-2 rounded-full">
-            <img src="https://i.ibb.co/BrJK8pp/twitter-round-new-alt.png" alt="Twitter" />
+            <img
+              src="https://i.ibb.co/BrJK8pp/twitter-round-new-alt.png"
+              alt="Twitter"
+            />
           </div>
           <div className="border-2 p-2 rounded-full">
-            <img src="https://i.ibb.co/B3HYjhg/instagram-round.png" alt="Instagram" />
+            <img
+              src="https://i.ibb.co/B3HYjhg/instagram-round.png"
+              alt="Instagram"
+            />
           </div>
           <div className="border-2 p-2 rounded-full">
-            <img src="https://i.ibb.co/FHHwWLp/linkedin-round.png" alt="LinkedIn" />
+            <img
+              src="https://i.ibb.co/FHHwWLp/linkedin-round.png"
+              alt="LinkedIn"
+            />
           </div>
         </div>
 
-        {/* Footer Text */}
         <div>
           <p className="text-center text-sm text-gray-300 pt-4">
-            &copy; {currentYear} <span className="text-[#febf00]">Niomax</span> All rights reserved
+            &copy; {currentYear} <span className="text-[#febf00]">Niomax</span>{" "}
+            All rights reserved
           </p>
         </div>
       </div>
