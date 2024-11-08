@@ -1,11 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Detect scroll position to change nav background color
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    // Attach scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="container mx-auto py-4 px-6 sm:px-20 bg-transparent">
+    <nav
+      className={`container mx-auto py-4 px-6 sm:px-20 sticky top-0 z-100 transition-all ${
+        isScrolled ? "bg-red-900" : "bg-transparent"
+      }`}
+    >
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-x-2">
           <img src="https://i.ibb.co.com/TBTRsHG/Group.png" alt="logo" />
@@ -74,7 +98,7 @@ const Header = () => {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-16 left-0 w-full bg-red-900  py-4 text-center">
+        <div className="md:hidden absolute top-16 left-0 w-full bg-red-900 py-4 text-center">
           <Link to="/" className="block text-white py-2 hover:underline">
             Home
           </Link>
