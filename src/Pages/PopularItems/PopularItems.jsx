@@ -58,6 +58,14 @@ const PopularItems = () => {
     return () => window.removeEventListener("resize", updateItemsPerPage);
   }, []);
 
+  useEffect(() => {
+    const autoScroll = setInterval(() => {
+      handleNext();
+    }, 3000);
+
+    return () => clearInterval(autoScroll);
+  }, [currentIndex]);
+
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
   };
@@ -65,7 +73,6 @@ const PopularItems = () => {
   const handlePrevious = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
   };
-
 
   const visibleItems = data
     .slice(currentIndex, currentIndex + itemsPerPage)
@@ -77,7 +84,6 @@ const PopularItems = () => {
   return (
     <div className="px-0 sm:px-6 lg:px-0 2xl:px-0">
       <div className="container mx-auto px-4 py-10 sm:px-20 sm:py-20 bg-popular-bg bg-cover bg-center text-center lg:text-left">
-        
         <div className="flex justify-between items-center mb-4 lg:mb-8">
           <div>
             <p className="flex  lg:justify-start items-center gap-x-2">
@@ -90,30 +96,26 @@ const PopularItems = () => {
               POPULAR FOOD ITEMS
             </p>
           </div>
-
-          
           <div className="hidden lg:flex gap-x-4">
             <button
               onClick={handlePrevious}
-              className="bg-white  p-3 rounded-full hover:text-red-700"
+              className="bg-white p-3 rounded-full hover:text-red-700"
             >
               <IoIosArrowBack />
             </button>
             <button
               onClick={handleNext}
-              className="bg-white  p-3 rounded-full hover:text-red-700"
+              className="bg-white p-3 rounded-full hover:text-red-700"
             >
               <IoIosArrowForward />
             </button>
           </div>
         </div>
-
-     
         <div className="flex flex-col lg:grid lg:grid-cols-4 gap-6 justify-center items-center mt-10">
           {visibleItems.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg p-6  text-center w-full max-w-xs lg:max-w-full mx-auto"
+              className="bg-white rounded-lg p-6 text-center w-full max-w-xs lg:max-w-full mx-auto"
             >
               <img
                 src={item.img}
@@ -127,19 +129,17 @@ const PopularItems = () => {
             </div>
           ))}
         </div>
-
-        
         {itemsPerPage === 1 && (
           <div className="flex justify-center mt-6 gap-4 lg:hidden">
             <button
               onClick={handlePrevious}
-              className="bg-white  p-3 rounded-full hover:text-red-700"
+              className="bg-white p-3 rounded-full hover:text-red-700"
             >
               <IoIosArrowBack />
             </button>
             <button
               onClick={handleNext}
-              className="bg-white  p-3 rounded-full hover:text-red-700"
+              className="bg-white p-3 rounded-full hover:text-red-700"
             >
               <IoIosArrowForward />
             </button>

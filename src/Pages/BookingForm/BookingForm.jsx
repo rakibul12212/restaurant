@@ -88,13 +88,13 @@ const BookingForm = () => {
                   className="bg-transparent border-2 border-gray-500 p-2 text-white outline-none"
                 />
                 <textarea
-  name="message"
-  id="message"
-  placeholder="Message"
-  value={message}
-  onChange={(e) => setMessage(e.target.value)}
-  className="w-full sm:col-span-2 h-24 sm:h-36 bg-transparent border-2 border-gray-500 p-2 text-white outline-none resize-none"
-/>
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  className="w-full sm:col-span-2 h-24 sm:h-36 bg-transparent border-2 border-gray-500 p-2 text-white outline-none resize-none"
+                />
               </div>
               <button
                 type="submit"

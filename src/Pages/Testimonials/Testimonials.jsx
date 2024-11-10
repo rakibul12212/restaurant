@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const data = [
@@ -39,6 +39,14 @@ const data = [
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  useEffect(() => {
+    const autoScroll = setInterval(() => {
+      handleNext();
+    }, 3000);
+
+    return () => clearInterval(autoScroll);
+  }, [currentIndex]);
+
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex + 1 >= data.length ? 0 : prevIndex + 1
@@ -53,7 +61,7 @@ const Testimonials = () => {
 
   return (
     <div className="bg-white px-4 sm:px-6 lg:px-20 2xl:px-20">
-      <div className="container mx-auto   py-20 bg-testimonial-bg bg-cover bg-center">
+      <div className="container mx-auto py-20 bg-testimonial-bg bg-cover bg-center">
         <div>
           <p className="mb-4 flex gap-x-4">
             <span className="text-red-700">&#9632;</span>
@@ -66,8 +74,7 @@ const Testimonials = () => {
           <p className="text-3xl font-bold py-2">
             WHAT SOME OF MY CUSTOMERS SAY
           </p>
-          {/* Desktop Navigation (Hidden on Mobile) */}
-          <div className="hidden md:flex justify-between items-center gap-4 ">
+          <div className="hidden md:flex justify-between items-center gap-4">
             <button
               onClick={handlePrevious}
               className="bg-white shadow-lg p-3 rounded-full hover:text-red-700"
@@ -82,7 +89,6 @@ const Testimonials = () => {
             </button>
           </div>
         </div>
-        {/* Card */}
         <div className="flex flex-col md:flex-row bg-[#FEBF00] mt-16 gap-8 md:gap-16">
           <div className="py-16 px-6 md:px-20 md:ps-28 flex-1">
             <span>
@@ -111,18 +117,14 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-
-          {/* Right Side: Video Image */}
           <div className="flex-1">
             <img
               src={data[currentIndex].recipe_video}
               alt="Recipe"
-              className="w-full h-full  shadow-md"
+              className="w-full h-full shadow-md"
             />
           </div>
         </div>
-
-        {/* Mobile Buttons under the Card */}
         <div className="flex justify-center gap-4 mt-6 md:hidden">
           <button
             onClick={handlePrevious}
