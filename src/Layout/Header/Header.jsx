@@ -31,36 +31,36 @@ const Header = () => {
       }`}
     >
       <div className="flex justify-between items-center">
-        <div className="flex items-center gap-x-2">
+        <a href="/"><div className="flex items-center gap-x-2">
           <img src="https://i.ibb.co.com/TBTRsHG/Group.png" alt="logo" />
           <h1 className="text-2xl text-white">
             <span className="font-semibold">Restau</span>rant
           </h1>
-        </div>
+        </div></a>
 
         <div className="hidden md:flex space-x-8 text-white">
-          <Link to="/" className="hover:underline">
+          <Link to="/" className="hover:text-[#EAB308]">
             Home
           </Link>
-          <Link to="/about" className="hover:underline">
+          <Link to="/about" className="hover:text-[#EAB308]">
             About
           </Link>
-          <Link to="/portfolio" className="hover:underline">
+          <Link to="/portfolio" className="hover:text-[#EAB308]">
             Portfolio
           </Link>
-          <Link to="/clients" className="hover:underline">
+          <Link to="/clients" className="hover:text-[#EAB308]">
             Clients
           </Link>
-          <Link to="/blog" className="hover:underline">
+          <Link to="/blog" className="hover:text-[#EAB308]">
             Blogs
           </Link>
-          <Link to="/contact" className="hover:underline">
+          <Link to="/contact" className="hover:text-[#EAB308]">
             Contact
           </Link>
         </div>
 
         <div className="hidden md:block">
-          <button className="bg-yellow-500 text-black font-semibold px-4 py-2 rounded">
+          <button className="bg-yellow-500 text-black font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded hover:bg-yellow-600 transition duration-200">
             Book a Table
           </button>
         </div>

@@ -3,7 +3,7 @@ import { LuPhoneCall } from "react-icons/lu";
 
 const ServicesSection = () => {
   return (
-    <div className="bg-white container mx-auto px-4 sm:px-6 lg:px-20 2xl:px-0 2xl:pb-20 pt-20">
+    <div className="bg-white container mx-auto px-4 sm:px-6 lg:px-20 2xl:px-20 2xl:pb-20 pt-20">
       {/* Top section */}
       <div className="flex flex-col lg:flex-row gap-x-10">
         <div className="relative mb-8 lg:mb-0">

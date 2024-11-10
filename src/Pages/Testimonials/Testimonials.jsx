@@ -52,7 +52,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="bg-white px-4 sm:px-6 lg:px-0 2xl:px-0">
+    <div className="bg-white px-4 sm:px-6 lg:px-20 2xl:px-20">
       <div className="container mx-auto   py-20 bg-testimonial-bg bg-cover bg-center">
         <div>
           <p className="mb-4 flex gap-x-4">
