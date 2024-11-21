@@ -26,17 +26,19 @@ const Header = () => {
 
   return (
     <nav
-      className={`container mx-auto py-4 px-6 sm:px-20 sticky top-0 z-100 transition-all ${
+      className={`container mx-auto py-4 px-6 sm:px-20  sticky top-0 z-5 transition-all ${
         isScrolled ? "bg-red-900" : "bg-transparent"
       }`}
     >
       <div className="flex justify-between items-center">
-        <a href="/"><div className="flex items-center gap-x-2">
-          <img src="https://i.ibb.co.com/TBTRsHG/Group.png" alt="logo" />
-          <h1 className="text-2xl text-white">
-            <span className="font-semibold">Restau</span>rant
-          </h1>
-        </div></a>
+        <a href="/">
+          <div className="flex items-center gap-x-2">
+            <img src="https://i.ibb.co.com/TBTRsHG/Group.png" alt="logo" />
+            <h1 className="text-2xl text-white">
+              <span className="font-semibold">Restau</span>rant
+            </h1>
+          </div>
+        </a>
 
         <div className="hidden md:flex space-x-8 text-white">
           <Link to="/" className="hover:text-[#EAB308]">
