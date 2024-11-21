@@ -3,7 +3,7 @@ import { LuPhoneCall } from "react-icons/lu";
 
 const ServicesSection = () => {
   return (
-    <div className="bg-white container mx-auto px-4 sm:px-6 lg:px-20 2xl:px-20 2xl:pb-20 pt-20">
+    <div className="bg-white container mx-auto px-4 sm:px-6 lg:px-36 2xl:px-36 2xl:pb-20 pt-20">
       {/* Top section */}
       <div className="flex flex-col lg:flex-row gap-x-10">
         <div className="relative mb-8 lg:mb-0">
@@ -50,57 +50,56 @@ const ServicesSection = () => {
       </div>
 
       {/* Bottom Section */}
-<div className="flex flex-col lg:flex-row justify-start lg:justify-around items-start lg:items-center py-10 space-y-10 lg:space-y-0">
-  {/* Fast Delivery */}
-  <div className="flex items-center gap-x-4">
-    <div className="p-4 bg-white rounded-full shadow-lg">
-      <img
-        src="https://i.ibb.co.com/QYZd2xj/package.png"
-        alt="box"
-        className="size-7"
-      />
-    </div>
-    <div>
-      <p className="font-bold text-center lg:text-left">FAST DELIVERY</p>
-      <p className="text-center lg:text-left">Within 30 minutes</p>
-    </div>
-  </div>
+      <div className="flex flex-col lg:flex-row justify-start lg:justify-around items-start lg:items-center py-10 space-y-10 lg:space-y-0">
+        {/* Fast Delivery */}
+        <div className="flex items-center gap-x-4">
+          <div className="p-4 bg-white rounded-full shadow-lg">
+            <img
+              src="https://i.ibb.co.com/QYZd2xj/package.png"
+              alt="box"
+              className="size-7"
+            />
+          </div>
+          <div>
+            <p className="font-bold text-center lg:text-left">FAST DELIVERY</p>
+            <p className="text-center lg:text-left">Within 30 minutes</p>
+          </div>
+        </div>
 
-  {/* Absolute Dining */}
-  <div className="flex items-center gap-x-4">
-    <div className="p-4 bg-white rounded-full shadow-lg">
-      <img
-        src="https://i.ibb.co.com/q9YFCMB/medal.png"
-        alt="medal"
-        className="size-7"
-      />
-    </div>
-    <div>
-      <p className="font-bold text-center lg:text-left">
-        ABSOLUTE DINING
-      </p>
-      <p className="text-center lg:text-left">Best buffet restaurant</p>
-    </div>
-  </div>
+        {/* Absolute Dining */}
+        <div className="flex items-center gap-x-4">
+          <div className="p-4 bg-white rounded-full shadow-lg">
+            <img
+              src="https://i.ibb.co.com/q9YFCMB/medal.png"
+              alt="medal"
+              className="size-7"
+            />
+          </div>
+          <div>
+            <p className="font-bold text-center lg:text-left">
+              ABSOLUTE DINING
+            </p>
+            <p className="text-center lg:text-left">Best buffet restaurant</p>
+          </div>
+        </div>
 
-  {/* Pickup Delivery */}
-  <div className="flex items-center gap-x-4">
-    <div className="p-4 bg-white rounded-full shadow-lg">
-      <img
-        src="https://i.ibb.co.com/FwKgyJC/bag.png"
-        alt="bag"
-        className="size-7"
-      />
-    </div>
-    <div>
-      <p className="font-bold text-center lg:text-left">
-        PICKUP DELIVERY
-      </p>
-      <p className="text-center lg:text-left">Grab your food order</p>
-    </div>
-  </div>
-</div>
-
+        {/* Pickup Delivery */}
+        <div className="flex items-center gap-x-4">
+          <div className="p-4 bg-white rounded-full shadow-lg">
+            <img
+              src="https://i.ibb.co.com/FwKgyJC/bag.png"
+              alt="bag"
+              className="size-7"
+            />
+          </div>
+          <div>
+            <p className="font-bold text-center lg:text-left">
+              PICKUP DELIVERY
+            </p>
+            <p className="text-center lg:text-left">Grab your food order</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

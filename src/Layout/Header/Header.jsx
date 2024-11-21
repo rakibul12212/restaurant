@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <nav
-      className={`container mx-auto py-4 px-6 sm:px-20  sticky top-0 z-5 transition-all ${
+      className={`container mx-auto py-4 px-6 sm:px-20 lg:px-36 sticky z-5 top-0   ${
         isScrolled ? "bg-red-900" : "bg-transparent"
       }`}
     >

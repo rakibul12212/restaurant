@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <div className="px-0 sm:px-6 lg:px-0 2xl:px-0">
-      <div className="container mx-auto px-4 lg:px-28 py-10 lg:py-20 bg-footer-bg bg-cover bg-center">
+      <div className="container mx-auto px-4 lg:px-36 py-10 lg:py-20 bg-footer-bg bg-cover bg-center">
         <div className="text-center text-white text-2xl lg:text-4xl font-bold">
           <p>WE'RE READY TO GIVE YOU THE BEST DINING EXPERIENCE</p>
         </div>

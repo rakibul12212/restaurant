@@ -31,7 +31,7 @@ const BookingForm = () => {
 
   return (
     <div className="px-0 sm:px-6 lg:px-0 2xl:px-0">
-      <div className="container mx-auto px-4 sm:px-10 lg:px-20 py-10 sm:py-20 bg-booking-bg bg-cover bg-center">
+      <div className="container mx-auto px-4 sm:px-10 lg:px-36 py-10 sm:py-20 bg-booking-bg bg-cover bg-center">
         <div>
           <p className="flex items-center gap-x-4 mb-4">
             <span className="text-red-700 text-2xl">&#9632;</span>

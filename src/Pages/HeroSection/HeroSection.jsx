@@ -2,8 +2,8 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-20">
-      <div className="flex flex-col lg:flex-row justify-between items-center py-10 lg:py-20 relative">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-36">
+      <div className="flex flex-col lg:flex-row justify-between items-center space-x-16  py-10 lg:py-20 relative">
         <div className="text-white z-50 mb-8 lg:mb-0 lg:absolute lg:left-0">
           <div className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-bold mb-4 lg:mb-6">
             <div className="backdrop-grayscale-0 bg-red-500/30 inline-block px-2 sm:px-4 lg:px-6 py-2 z-10">

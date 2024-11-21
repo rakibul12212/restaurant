@@ -83,7 +83,7 @@ const PopularItems = () => {
 
   return (
     <div className="px-0 sm:px-6 lg:px-0 2xl:px-0">
-      <div className="container mx-auto px-4 py-10 sm:px-20 sm:py-20 bg-popular-bg bg-cover bg-center text-center lg:text-left">
+      <div className="container mx-auto px-4 py-10 sm:px-20 lg:px-36 sm:py-20 bg-popular-bg bg-cover bg-center text-center lg:text-left">
         <div className="flex justify-between items-center mb-4 lg:mb-8">
           <div>
             <p className="flex  lg:justify-start items-center gap-x-2">
