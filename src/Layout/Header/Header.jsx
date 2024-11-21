@@ -26,8 +26,8 @@ const Header = () => {
 
   return (
     <nav
-      className={`container mx-auto py-4 px-6 sm:px-20 lg:px-36 sticky z-5 top-0   ${
-        isScrolled ? "bg-red-900" : "bg-transparent"
+      className={`container mx-auto py-4 px-6 sm:px-20 lg:px-36 sticky z-50 top-0 transition-all duration-300 ${
+        isScrolled ? "bg-red-900 shadow-md" : "bg-transparent"
       }`}
     >
       <div className="flex justify-between items-center">
@@ -98,7 +98,6 @@ const Header = () => {
           </button>
         </div>
       </div>
-
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-16 left-0 w-full bg-red-900 py-4 text-center">
           <Link to="/" className="block text-white py-2 hover:underline">

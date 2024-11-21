@@ -4,7 +4,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 const data = [
   {
     review:
-      "You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would definitely recommend it.",
+      "The Chicken Mandi was delicious! The chicken was so tender and well-seasoned. The rice was flavorful and complemented the chicken beautifully. It’s a great option for a satisfying meal, and I’ll be coming back for more!",
     user_name: "KHALID AL DAWSRY",
     user_location: "Jedda, Saudi",
     user_photo: "https://i.ibb.co.com/zhxyD0C/Image.png",

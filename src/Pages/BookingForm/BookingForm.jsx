@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { DatePicker, Space } from "antd";
 const BookingForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -55,7 +55,7 @@ const BookingForm = () => {
                   required
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="bg-transparent border-2 border-gray-500 p-2 text-white outline-none"
+                  className="bg-transparent border-2 border-gray-500 p-2 text-white outline-none rounded-md"
                 />
                 <input
                   type="email"
@@ -65,18 +65,21 @@ const BookingForm = () => {
                   placeholder="Your Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="bg-transparent border-2 border-gray-500 p-2 text-white outline-none"
+                  className="bg-transparent border-2 border-gray-500 p-2 text-white outline-none rounded-md"
                 />
-                <input
-                  type="date"
-                  name="date"
-                  id="date"
-                  required
-                  placeholder="Reservation Date"
-                  value={date}
-                  onChange={(e) => setDate(e.target.value)}
-                  className="bg-transparent border-2 border-gray-500 p-2 text-white outline-none"
-                />
+                <Space direction="vertical" className="w-full bg-transparent">
+                  <DatePicker
+                    id="date"
+                    required
+                    placeholder="Reservation Date"
+                    onChange={(date, dateString) => setDate(dateString)}
+                    className="bg-transparent border-2 border-gray-500 p-2 text-white outline-none w-full"
+                    style={{
+                      color: "white",
+                      outline: "none",
+                    }}
+                  />
+                </Space>
                 <input
                   type="number"
                   name="number"
@@ -85,7 +88,7 @@ const BookingForm = () => {
                   placeholder="Total People"
                   value={number}
                   onChange={(e) => setNumber(e.target.value)}
-                  className="bg-transparent border-2 border-gray-500 p-2 text-white outline-none"
+                  className="bg-transparent border-2 border-gray-500 p-2 text-white outline-none rounded-md"
                 />
                 <textarea
                   name="message"
@@ -93,7 +96,7 @@ const BookingForm = () => {
                   placeholder="Message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  className="w-full sm:col-span-2 h-24 sm:h-36 bg-transparent border-2 border-gray-500 p-2 text-white outline-none resize-none"
+                  className="w-full sm:col-span-2 h-24 sm:h-36 bg-transparent border-2 border-gray-500 p-2 text-white outline-none resize-none rounded-md"
                 />
               </div>
               <button
