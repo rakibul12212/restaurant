@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { IoMdStopwatch } from "react-icons/io";
 import { LuPhoneCall } from "react-icons/lu";
@@ -11,7 +12,7 @@ const Footer = () => {
     <div className="px-0 sm:px-6 lg:px-0 2xl:px-0">
       <div className="container mx-auto px-4 lg:px-36 py-10 lg:py-20 bg-footer-bg bg-cover bg-center">
         <div className="text-center text-white text-2xl lg:text-4xl font-bold">
-          <p>WE'RE READY TO GIVE YOU THE BEST DINING EXPERIENCE</p>
+          <p>WE&apos;RE READY TO GIVE YOU THE BEST DINING EXPERIENCE</p>
         </div>
 
         <div className="flex flex-col lg:flex-row justify-between items-center text-center text-white pt-10 lg:pt-20 gap-y-10 lg:gap-y-0">
